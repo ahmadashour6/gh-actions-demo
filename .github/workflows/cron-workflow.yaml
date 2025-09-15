@@ -3,6 +3,9 @@ name: cron workflow
 on:
   schedule:
     - cron: "*/5 * * * *"
+  repository_dispatch:
+    types: [test] 
+
 
 jobs:
   cron_workflow:
