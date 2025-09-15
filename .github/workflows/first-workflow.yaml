@@ -1,15 +1,20 @@
 name: first workflow
 on:
-  push:
-    branches:
-      - "main" 
+  workflow_dispatch:
+    inputs:
+      versionName:
+        required: true
+        description: "this is version name for github workflow"
+  # push:
+  #   branches:
+  #     - "main" 
 jobs:
   first_workflow:  
     name: first job
     runs-on: ubuntu-latest 
     steps:
-      - name: efore checkout action
-        run: ls
+      - name: efore checkout action 
+        run: echo "Version: ${{ github.event.inputs.versionName }}" 
         shell: bash
 
       - name: checkout steps
