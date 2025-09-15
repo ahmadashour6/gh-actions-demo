@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
       - name: efore checkout action 
-        run: echo "Version: ${{ github.event.inputs.versionName }}" 
+        run: ls
         shell: bash
 
       - name: checkout steps
