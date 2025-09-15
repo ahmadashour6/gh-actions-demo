@@ -3,7 +3,6 @@ name: cron workflow
 on:
   schedule:
     - cron: "*/5 * * * *"
-    - cron: "*/20 1 * * *"
 
 jobs:
   cron_workflow:

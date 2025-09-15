@@ -5,9 +5,6 @@ on:
       versionName:
         required: true
         description: "this is version name for github workflow"
-  # push:
-  #   branches:
-  #     - "main" 
 jobs:
   first_workflow:  
     name: first job
