@@ -6,7 +6,7 @@ on:
     - cron: "0/20 1 * * *"
 
 jobs:
-  cron-workflow:
+  cron_workflow:
     runs-on: ubuntu-latest
     steps:
       - run: echo "cron workflow"
